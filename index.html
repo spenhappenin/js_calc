@@ -1,10 +1,55 @@
 <html>
   <head>
-    <title>JavaScript Calculator</title>
-  	<link href='assets/stylesheets/app.css', rel='stylesheet', type='text/css' />
+    <title>JS Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link href='assets/stylesheets/app.css' rel='stylesheet' type='text/css' />
   </head>
-
   <body>
-  	
+    <h1 class="center font-orange">JavaScript Calculator</h1>
+
+    <div class="container main-calc">
+      <div class="col s12 center">
+        <h5 class='centered' id="screen"></h5>
+      </div>
+       <div class="col s10 offset-s1 center ">
+        <div class="col s3 calc-button btn button-style-y">(</div>
+        <div class="col s3 calc-button btn button-style-y">)</div>
+        <div id='percentage-button' class="col s3 btn button-style-y text-center">%</div>
+        <div id='clear-button' class="col s3 btn button-style-y text-center">AC</div>
+      </div>
+      <div class="col s10 offset-s1 center">
+        <div class="col s3 calc-button btn button-style-b">7</div>
+        <div class="col s3 calc-button btn button-style-b">8</div>
+        <div class="col s3 calc-button btn button-style-b">9</div>
+        <div class="col s3 calc-button btn button-style-y">/</div>
+      </div>
+        <div class="col s10 offset-s1 center">
+        <div class="col s3 calc-button btn button-style-b">4</div>
+        <div class="col s3 calc-button btn button-style-b">5</div>
+        <div class="col s3 calc-button btn button-style-b">6</div>
+        <div class="col s3 calc-button btn button-style-y">*</div>
+      </div>
+        <div class="col s10 offset-s1 center">
+        <div class="col s3 calc-button btn button-style-b">1</div>
+        <div class="col s3 calc-button btn button-style-b">2</div>
+        <div class="col s3 calc-button btn button-style-b">3</div>
+        <div class="col s3 calc-button btn button-style-y">-</div>
+      </div>
+        <div class="col s10 offset-s1 center">
+        <div class="col s3 calc-button btn button-style-b">0</div>
+        <div class="col s3 calc-button btn button-style-b">.</div>
+        <div id='equal-button' class="col s3 button-style btn button-style-y">=</div>
+        <div class="col s3 calc-button btn button-style-y">+</div>
+      </div>
+        <div class="col s10 offset-s1 center">
+        <div id='plusminus-button' class="col s3 btn button-style-y text-center">+/-</div>
+      </div>
+    </div>
+
+
+
+    <script src='assets/javascripts/calc.js'></script>
   </body>
+
 </html>
+
