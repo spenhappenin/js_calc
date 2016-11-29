@@ -64,12 +64,12 @@ body {
 #screen {
   font-family: "digital-7";
   font-weight: lighter;
-  font-size: 50px;
+  font-size: 60px;
   background-color: #2C2D2D;
   color: white;
   border: 1px solid black;
   width: 87%;
-  height: 50px;
+  height: 70px;
   margin: 15px auto;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -82,14 +82,8 @@ body {
   align-items: center;
 }
 
-#screen {
-/*  height: 50px;
-  display: flex;
-  justify-content: center;*/
-}
-
 .text-center {
-	text-align: center;
+	/*text-align: center;*/
 }
 
 

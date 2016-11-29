@@ -1,4 +1,4 @@
-var numbers = ""
+var numbers = "";
 
 var calcButtons = document.getElementsByClassName('calc-button')
   for(var i = 0; i < calcButtons.length; i++) {
@@ -13,8 +13,6 @@ var calcButtons = document.getElementsByClassName('calc-button')
 var screen = document.getElementById('screen');
 function putNumber(number) {
   screen.innerHTML = number;
-  console.log(number);
-    console.log(number.innerText);
     number.innerText = calcButtons;
 }
 
@@ -25,8 +23,8 @@ equalButton.addEventListener('click', function(){
   numbers = eval(numbers);
   putNumber(numbers);
   if(screen.innerHTML === 'Infinity' || screen.innerHTML === 'NaN') {
-    putNumber('error');
-    numbers = ""
+    putNumber('Error');
+    numbers = "";
   }
 });
 
@@ -34,20 +32,20 @@ equalButton.addEventListener('click', function(){
 var acButton = document.getElementById('clear-button');
 
 acButton.addEventListener('click', function(){
-  numbers = ""
-  putNumber(0);
+  numbers = "";
+  putNumber("");
 });
 
 var percentageButton = document.getElementById('percentage-button');
 percentageButton.addEventListener('click', function(){
   putNumber(numbers / 100);
-  numbers = numbers / 100
+  numbers = numbers / 100;
 });
 
 var plusminusButton = document.getElementById('plusminus-button');
 plusminusButton.addEventListener('click', function(){
   putNumber(-numbers);
-  numbers = -numbers
+  numbers = -numbers;
 });
 
 
